@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Ctrl+I Shortcut Extension",
+  "description": "Abre una URL específica cuando presionas Ctrl+I",
+  "version": "1.0",
+  "permissions": ["tabs"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "commands": {
+    "open_url": {
+      "suggested_key": {
+        "default": "Ctrl+I",
+        "windows": "Ctrl+I",
+        "mac": "Command+I",
+        "chromeos": "Ctrl+I",
+        "linux": "Ctrl+I"
+      },
+      "description": "Abrir una URL con Ctrl+I"
+    }
+  }
+}
